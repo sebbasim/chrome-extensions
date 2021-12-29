@@ -1,0 +1,13 @@
+{
+  "name": "Hide De Tijd Ticker",
+  "description": "Hides annoying ticker at the top of De Tijd pages",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://www.tijd.be/*"],
+      "js": ["/content_script.js"], 
+      "run_at": "document_idle"
+    }
+  ]
+}

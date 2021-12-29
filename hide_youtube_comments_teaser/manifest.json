@@ -1,0 +1,22 @@
+{
+  "name": "Hide Youtube's Comments Header (2021 version)",
+  "description": "Hides Youtube's comments header section.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "48": "no_comment_48.png",
+    "128": "no_comment_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "/content_script.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
